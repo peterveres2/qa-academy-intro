@@ -4,8 +4,8 @@ public class CheckList {
 		public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			int[] listToCheck = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-			System.out.println(checkList(listToCheck, 5));
-			System.out.println(checkList(listToCheck, 8));
+			assertTrue(checkList(listToCheck, 5));
+			assertTrue(checkList(listToCheck, 8));
 	}
 		
 		
@@ -20,5 +20,16 @@ public class CheckList {
 		}	
 		return result;
 	}
+	
+	static void assertTrue(boolean value) {
+		if (!value) {
+			throw new RuntimeException();
+		}
+	}
 
+	static void assertFalse(boolean value) {
+		assertTrue(!value);
+	}
+	
 }
+  
