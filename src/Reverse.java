@@ -10,6 +10,7 @@ public class Reverse {
 			arrayToReverse[i] = arrayToReverse[arrayToReverse.length - 1 - i];
 			arrayToReverse[arrayToReverse.length - 1 - i] = temp;
 		}
+		
 	}
 
 	public static void main(String[] args) {
