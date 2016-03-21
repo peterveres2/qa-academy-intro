@@ -12,6 +12,22 @@ public class LinkedListTest {
 		System.out.println(names.toString());
 		names.remove("Zoli");
 		System.out.println(names.toString());
+		greet(names);
+		
+		
+	}
+	
+	/**
+	 * Say hello to all my friends, but greets everyone only once, even if
+	 * he/she appears more than once in the list.
+	 * Hello Zoli!
+	 * Hello Peter!
+	 * Hello Zsófi!
+	 * 
+	 */
+	public static void greet(LinkedList friends) {
+		
+		
 	}
 
 }

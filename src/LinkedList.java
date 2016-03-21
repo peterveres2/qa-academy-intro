@@ -40,6 +40,12 @@ public class LinkedList {
 		
 	}
 	
+	/**
+	 * Replace the element at the given position
+	 */
+	public void set(String name, int i){
+		
+	}
 	public void remove(String name){
 		boolean found = false;
 		ListNode actual = first;
