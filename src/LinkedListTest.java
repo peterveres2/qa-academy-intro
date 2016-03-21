@@ -36,7 +36,23 @@ public class LinkedListTest {
 	 * 
 	 */
 	public static void greet(LinkedList friends) {
-		
+		String[] greeted = new String[friends.size()];
+		int counter = 0;
+		for (int i = 0; i < friends.size(); i ++) {
+			String actual = friends.get(i);
+			boolean contains = false;
+			for (int j = 0; j < counter && !contains; j++) {
+				if (greeted[j].equals(actual)) {
+					contains = true;
+				}
+			}
+			if (!contains) {
+				System.out.println("Hello " + actual + "!");
+				greeted[counter] = actual;
+				counter++;
+			
+			}
+		}
 		
 	}
 
