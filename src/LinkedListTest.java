@@ -7,12 +7,11 @@ public class LinkedListTest {
 		names.add("Zoli");
 		names.add("Zsófi");
 		names.add("Zoli");
+		System.out.println(names.get(3));
 		
 		System.out.println(names.toString());
 		names.remove("Zoli");
 		System.out.println(names.toString());
-		
-		
 	}
 
 }

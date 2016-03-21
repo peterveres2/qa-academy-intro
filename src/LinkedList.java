@@ -2,22 +2,40 @@ public class LinkedList {
 
 	ListNode first = null;
 	ListNode last = null;
+	int size = 0;
 	
+	public int size(){
+		return this.size;
+	}
+	
+	public String get(int i){
+		ListNode actual = first;
+		int count = 0;
+		String result = null;
+		
+		while(actual!=null){
+			if (count == i){
+				result = actual.name;
+				
+			}
+			count++;
+			actual = actual.next;
+		}
+		
+		return result;
+	}
 
 	public void add(String name) {
 		ListNode element = new ListNode(name, null, null);
+		size++; 
 		
 		if (first == null) {
-			
 			first = element;
 			last = first;
 		} else {
 			element.prev=last;
 			last.next=element;
 			last = element;
-			
-			
-			
 		}
 		
 	}
@@ -38,17 +56,20 @@ public class LinkedList {
 				}
 				
 				found = true;
+				size--;
 			}
 			
 			actual = actual.next;
 		}
 		
 	}
+	
 
 	@Override
 	public String toString() {
 		ListNode actual = first;
 		String result = "";
+		result += size() + ": ";
 
 		while (actual != null) {
 			result += " " + actual.name;
