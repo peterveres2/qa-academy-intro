@@ -20,9 +20,19 @@ public class LinkedListTest {
 	/**
 	 * Say hello to all my friends, but greets everyone only once, even if
 	 * he/she appears more than once in the list.
+	 * For example: 
+	 * <pre>
+	 * names.add("Zoli");
+	 * names.add("Peter");
+	 * names.add("Zoli");
+	 * names.add("Zsófi");
+	 * </pre>
+	 * Result:
+	 * <pre>
 	 * Hello Zoli!
 	 * Hello Peter!
 	 * Hello Zsófi!
+	 * </pre>
 	 * 
 	 */
 	public static void greet(LinkedList friends) {

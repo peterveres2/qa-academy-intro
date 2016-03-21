@@ -41,7 +41,7 @@ public class LinkedList {
 	}
 	
 	/**
-	 * Replace the element at the given position
+	 * Replace name at the given position
 	 */
 	public void set(String name, int i){
 		
